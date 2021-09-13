@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">Self-Taught Developers Survey Form</h1>
+        <p id="description">Thank you for taking the time to share your learning experience with us</p>
+        <form id="survey-form" action="#" method="GET">
+            <fieldset id="form-fieldset">
+                <label id="name-label" for="name">Name</label><br>
+                <input id="name" class="form-field" type="text" placeholder="Enter your name" required><br><br>
+                <label id="email-label" for="email">Email</label><br>
+                <input id="email" class="form-field" type="text" placeholder="Enter your Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" required><br><br>
+                <label id="number-label" for="number">Age (optional)</label><br>
+                <input id="number" class="form-field" type="number" placeholder="Age" min="16" max="100"><br><br>
+                <p>Which option best describes your current role?</p>
+            <select id="current-role" class="form-field" required>
+                 <option value="">Select current role</option>
+                 <option value="student">Student</option>
+                 <option value="full time job">Full Time Job</option>
+                 <option value="full time learner">Full Time Learner</option>
+                 <option value="prefer not to say">Prefer not to say</option>
+                 <option value="other">Other</option>   
+            </select>
+            <br>
+            <br>
+            <p>Do you think anyone can be a Self-Taught Programmer?</p>  
+            <input id="definitely" type="radio" name="opinion" value="definitely" required>
+            <label for="definitely">Definitely</label><br>
+            <input id="maybe" type="radio" name="opinion" value="maybe">
+            <label for="maybe">Maybe</label><br>
+            <input  id="not-sure" type="radio" name="opinion" value="not sure">
+            <label for="not-sure">Not sure</label>  
+            <br>
+            <br>          
+            <p>What aspect of programming do you like most?</p>        
+            <select id="dropdown" class="form-field" required>
+                <option value="">Select an option</option>
+                 <option value="creating new things">Creating new things</option>
+                 <option value="solving problems">Solving problems</option>
+                 <option value="design">Design</option>
+                </select>
+                <br>
+                <br>
+                <p>What is the most important skill for a Self-Taught Programmer?</p>
+            <input id="problem-solving" type="checkbox" value="problem-solving">
+            <label for="problem-solving">Problem-solving mindset</label><br>
+            <input id="creativity" type="checkbox" value="creativity">
+            <label for="creativity">Creativity</label><br>
+            <input id="patience" type="checkbox" value="patience">
+            <label for="patience">Patience</label><br>
+            <input id="persistence" type="checkbox" value="persistence" checked>
+            <label for="persistance">Presistance</label>
+            <br>
+            <br>
+            <p>Your advice for aspiring developers:</p>
+            <textarea id="text-area" name="text-area" rows="5" cols="73" placeholder="Enter your advice here"></textarea><br>
+            <input id="submit" type="submit" value="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
